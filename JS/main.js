@@ -111,6 +111,32 @@ $("#colores").html("<div class=''> <h1 class=''>Mne Mne Mne</h1> </div>")
 $("#colores div").css("color" , "black")
 $("#colores").css("background-color" , `rgb( ${255} , ${255} , ${255})`)
 })
+
+/********************************* ezo js **********************************/
+$('.R').hover(function(){
+
+    $('#rgbSection').css('backgroundColor', '#FF0000');
+  });
+
+  $('.G').hover(function(){
+
+    $('#rgbSection').css('backgroundColor', '#00FF00');
+  });
+
+  $('.B').hover(function(){
+
+    $('#rgbSection').css('backgroundColor', '#0000FF');
+  
+  });
+  
+  
+  
+  $('.R,.G,.B').mouseleave(function(){
+  
+    $('#rgbSection').css('backgroundColor', '#FFFFFF');
+  
+  });
+  
 /*********************************Nancy js**********************************/
 var username=document.getElementById("name")
 var email=document.getElementById("Email")

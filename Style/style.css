@@ -261,6 +261,20 @@ section .title h5 {
     line-height: 10px;
     font-size: 17px;
     color: darkslategray; 
+    display: inline-block;
+}
+
+/************************************ ezo css *******************************************************/
+.fontSize {
+    padding: 0 50px;
+    font-size: 300px;
+    cursor: pointer;
+}
+.colors{
+    
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
 }
 /************************************ Nancy Css ***************************************************/
 .fifth
