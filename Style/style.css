@@ -262,3 +262,91 @@ section .title h5 {
     font-size: 17px;
     color: darkslategray; 
 }
+/************************************ Nancy Css ***************************************************/
+.fifth
+{
+    background-color: #17a2b8;
+    height: 592 px;
+    padding-top: 30px;
+}
+.fifth .header 
+{
+    background-color: white;
+    height: 62.4px;
+}
+.fifth .header .container h2
+{
+    text-align: center;
+    padding: 8px 0px 16px 0px;
+    margin-bottom: 0px !important;
+
+}
+.fifth .header .container h2 .firsttext
+{
+    color: #28a745;
+    font-weight: 400px;
+    font-size: 38px;
+    line-height: 1.3px;
+
+}
+.fifth .header .container h2 .secondtext
+{
+    color: #dc3545;
+    font-weight: 400px;
+    font-size: 38px;
+    line-height: 1.3px;
+
+}
+.fifth .footer h2
+{
+    padding: 0px 15px;
+}
+.fifth .footer h2
+{
+    text-align: center;
+    color: #787878;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.3;
+
+}
+.fifth .footer form .labelname
+{
+    margin-top: 0px;
+
+}
+.fifth .footer form label
+{
+    margin-bottom: 8px;
+    color: #787878;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 16px;
+
+}
+.fifth .footer form input
+{
+    padding: 6px 12px;
+
+}
+.fifth .footer form .alert
+{
+    display:none;
+
+}
+.fifth .footer form .group
+{
+    margin:16px 0px  16px 0px;
+
+}
+.fifth .footer form textarea
+{
+    padding: 6px 12px ;
+
+}
+.fifth .footer form .btn 
+{
+    margin-bottom: 0px !important;
+}
+/********************************************************************/

@@ -68,7 +68,48 @@
     </section>
 
     <!--******************************************************************-->
-    
+    <!--************* Nancy Section *********************************-->
+    <section class="fifth">
+        <div class="header">
+            <div class="container">
+                <h2>
+                <span class="firsttext">Q5</span>
+                <span class="secondtext">| 10 Mark</span>
+                </h2>
+            </div>
+        </div>
+        <div class="footer">
+        <div class="container">
+            <h2>Form validation</h2>
+            <form>
+                <label class="labelname">User name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter user name" onblur="validateUserName()"> 
+                <div class="alert alert-danger" id="namealert" role="alert" >
+                    entre valid username
+                </div>
+                         
+                <label>Email address </label>
+                <input  type="email" class="form-control" id="Email" placeholder="Enter email" onblur="validateEmail()">       
+                <div class="alert alert-danger" id="emailalert" role="alert" >
+                    entre valid email
+                </div>
+                  
+                <label>Phone</label>
+                <input type="number" class="form-control" id="Phone" placeholder="Enter phone" onblur="validatePhone()">        
+                <div class="alert alert-danger" id="phonealert" role="alert">
+                    entre valid phone
+        
+                  </div>
+                  <div class="group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter Your Message"></textarea>
+                <div class="counter"></div>
+            </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+         </form>
+        </div>
+        </div>
+        </section>
+<!--********************************************************************-->
 
 
 

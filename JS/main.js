@@ -111,4 +111,65 @@ $("#colores").html("<div class=''> <h1 class=''>Mne Mne Mne</h1> </div>")
 $("#colores div").css("color" , "black")
 $("#colores").css("background-color" , `rgb( ${255} , ${255} , ${255})`)
 })
+/*********************************Nancy js**********************************/
+var username=document.getElementById("name")
+var email=document.getElementById("Email")
+var phone=document.getElementById("Phone")
+var namealert=document.getElementById("namealert")
+var emailalert=document.getElementById("emailalert")
+var phonealert=document.getElementById("phonealert")
+var valueoftextarea=document.getElementById("exampleFormControlTextarea1").value
+var lengthoftextarea= valueoftextarea.length
+var listitem=document.getElementById("hide")
+var head=document.getElementById("head2")
+var contentText="";
+var text
+function validateUserName()
+{
+   var valueofname = /^[a-zA-Z]{2,10}/;    
+   if(valueofname.test(username.value)==true)
+    {
+        namealert.style.display="none"
+    }else
+    {
+      namealert.style.display="block"
 
+    }
+}
+function validateEmail()
+{
+   var valueofemail = /^[a-zA-Z]{2,10}/;    
+   if(valueofemail.test(email.value)==true)
+    {
+        emailalert.style.display="none"
+    }else
+    {
+      emailalert.style.display="block"
+
+    }
+}
+function validatePhone()
+{
+   var valueofphone = /^[a-zA-Z]{2,10}/;    
+   if(valueofphone.test(phone.value)==true)
+    {
+        phonealert.style.display="none"
+    }else
+    {
+      phonealert.style.display="block"
+
+    }
+}
+$('textarea').keypress(function(){
+    if(lengthoftextarea<30)
+    {
+        $(".counter").text(30-(lengthoftextarea +=1) + "letter remailing")
+    }else
+    {
+        this.value = this.value.substring(0, max);
+    }
+    });
+    
+    function hoverRGB (value) {
+        document.getElementById("colorRGB").style.backgroundColor = value;
+     }
