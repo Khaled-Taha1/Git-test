@@ -75,3 +75,40 @@ function deleteProduct(  index  )
     localStorage.setItem("ourProductsStorage" ,JSON.stringify(productsList)) 
     displayProducts() 
 }
+ /************************************ Khaled Js****************************************/ 
+
+ 
+$("#colores").mouseenter( function(){  $("#colores").html("<div class=''> <h1 class=''>Mne Mne Mne</h1> </div> <audio id='sound' src='jessey_drake_vox_12month_baby_SMOOCH_long_cute_laugh_giggle_HEX_JD.mp3' loop controls autoplay preload='auto' class='d-none' > </audio>")
+
+})
+
+
+
+
+$("#colores").mousemove( function(){ 
+var R = Math.random();
+console.log(R*100);
+
+var G = Math.random();
+console.log(G*100);
+
+
+var B = Math.random();
+console.log(B*100);
+
+
+
+$("#colores div").css("color" , "white")
+$("#colores").css("background-color" , `rgb( ${(R*100)} , ${(G*100)} , ${B*100})`) 
+})
+
+
+
+
+$("#colores").mouseleave( function() {
+
+$("#colores").html("<div class=''> <h1 class=''>Mne Mne Mne</h1> </div>")
+$("#colores div").css("color" , "black")
+$("#colores").css("background-color" , `rgb( ${255} , ${255} , ${255})`)
+})
+
