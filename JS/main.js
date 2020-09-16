@@ -111,6 +111,33 @@ $("#colores").html("<div class=''> <h1 class=''>Mne Mne Mne</h1> </div>")
 $("#colores div").css("color" , "black")
 $("#colores").css("background-color" , `rgb( ${255} , ${255} , ${255})`)
 })
+/********************************* Marwa js **********************************/
+
+////////////////////counter////////////////////////////
+let countDownDate = new Date("mar 1,2022 00:01:00").getTime();
+
+
+let x = setInterval(()=>{
+
+  let nowDate = new Date().getTime();
+  let d = countDownDate - nowDate;
+
+   // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(d/(1000*60*60*24));
+  var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+  var minuts = Math.floor((d%(1000*60*60))/(1000*60));
+  var seconds = Math.floor((d%(1000*60))/1000);
+
+  document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minuts").innerHTML = minuts;
+  document.getElementById("seconds").innerHTML = seconds;
+
+  if(d <= 0){
+    clearInterval(x);
+    //document.getElementsByClassName("timeDate").innerHTML = "EXPIRED";
+  }
+},1000);
 
 /********************************* ezo js **********************************/
 $('.R').hover(function(){
@@ -136,6 +163,7 @@ $('.R').hover(function(){
     $('#rgbSection').css('backgroundColor', '#FFFFFF');
   
   });
+
   
 /*********************************Nancy js**********************************/
 var username=document.getElementById("name")
